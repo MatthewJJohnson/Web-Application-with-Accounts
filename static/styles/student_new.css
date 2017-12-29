@@ -1,0 +1,307 @@
+body {
+        display: block;
+        text-align: center;
+        width: 80%;
+        margin-left: 10%;
+        height: 100%;
+        background-image: url("../media/NightCampus.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+.masthead {
+    display: block;
+    text-align:center;
+    color: #9e1c1c;
+    font-size: 130%;
+    padding-bottom: 4%;
+}
+
+.cover-heading {
+    display: block;
+    text-align:center;
+    color: white;
+    font-style: italic;
+    font-size: 300%;
+}
+
+.lead1{
+    display: block;
+    text-align: center;
+    color: white;
+    font-style: bold;
+    padding-bottom:5%;
+    font-size: 150%;
+}
+
+.sign-up-student {
+        padding: 20px 80px;
+        color: white;
+        text-align: center;
+        background-color: #9e1c1c;
+        font-size: 120%;
+        font-family: Impact, Charcoal, sans-serif;
+        text-decoration:none;
+        border: 2px solid #aaa;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+}
+
+.sign-up-student:hover {
+    background-color: white;
+    color: #9e1c1c;
+    border: 2px solid #9e1c1c;
+}
+
+.cancel{
+  padding: 20px 80px;
+  color: white;
+  text-align: center;
+  background-color: #9e1c1c;
+  font-size: 120%;
+  font-family: Impact, Charcoal, sans-serif;
+  text-decoration:none;
+  border: 2px solid #aaa;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.cancel:hover {
+    background-color: white;
+    color: #9e1c1c;
+    border: 2px solid #9e1c1c;
+}
+
+.input-wrap{
+    padding-top:30px;
+}
+
+.firstname-title{
+    text-align: left;
+    margin-left: 24%;
+    display:block;
+    color: white;
+    font-size: 130%;
+    font-style: bold;
+    padding: 1%;
+}
+
+.firstname-input{
+    margin-left: 25%;
+    display:block;
+    font-style: bold;
+    width:50%;
+    background-color: white;
+    border: 2px solid #9e1c1c;
+    padding: 1%;
+    margin-bottom: 10px;
+}
+
+.lastname-title{
+    text-align: left;
+    margin-left: 24%;
+    display:block;
+    color: white;
+    font-size: 130%;
+    font-style: bold;
+    padding: 1%;
+}
+
+.lastname-input{
+    margin-left: 25%;
+    display:block;
+    font-style: bold;
+    width:50%;
+    background-color: white;
+    border: 2px solid #9e1c1c;
+    padding: 1%;
+    margin-bottom: 10px;
+}
+
+.wsuid-title{
+    text-align: left;
+    margin-left: 24%;
+    display:block;
+    color: white;
+    font-size: 130%;
+    font-style: bold;
+    padding: 1%;
+}
+
+.wsuid-input{
+    margin-left: 25%;
+    display:block;
+    font-style: bold;
+    width:50%;
+    background-color: white;
+    border: 2px solid #9e1c1c;
+    padding: 1%;
+    margin-bottom: 10px;
+}
+
+.phone-title{
+    text-align: left;
+    margin-left: 24%;
+    display:block;
+    color: white;
+    font-size: 130%;
+    font-style: bold;
+    padding: 1%;
+}
+
+.phone-input{
+    margin-left: 25%;
+    display:block;
+    font-style: bold;
+    width:50%;
+    background-color: white;
+    border: 2px solid #9e1c1c;
+    padding: 1%;
+}
+
+.username-disclaim{
+    display: block;
+        margin-left: 24%;
+        margin-right: 24%;
+    text-align: center;
+    color: white;
+    font-style: bold;
+    padding-top: 3%;
+    font-size: 100%;
+}
+
+.username-title{
+    text-align: left;
+    margin-left: 24%;
+    display:block;
+    color: white;
+    font-size: 130%;
+    font-style: bold;
+    padding: 1%;
+}
+
+.username-input{
+    margin-left: 25%;
+    display:block;
+    font-style: bold;
+    width:50%;
+    background-color: white;
+    border: 2px solid #9e1c1c;
+    padding: 1%;
+}
+
+.password-disclaim{
+    padding-top: 3%;
+        margin-left: 24%;
+        margin-right: 24%;
+    display: block;
+    text-align: center;
+    color: white;
+    font-style: bold;
+    font-size: 100%;
+}
+
+.password-title{
+    text-align: left;
+    margin-left: 24%;
+    display:block;
+    color: white;
+    font-size: 130%;
+        padding: 1%;
+}
+
+.password-input{
+    margin-left: 25%;
+    display:block;
+    width:50%;
+    background-color: white;
+    border: 2px solid #9e1c1c;
+    padding: 1%;
+        margin-bottom: 10px;
+}
+
+
+.major-title{
+    text-align: left;
+    margin-left: 24%;
+    display:block;
+    color: white;
+    font-size: 130%;
+    font-style: bold;
+    padding: 1%;
+}
+
+.major-input{
+    margin-left: 25%;
+    display:block;
+    font-style: bold;
+    width:50%;
+    background-color: white;
+    border: 2px solid #9e1c1c;
+    padding: 1%;
+        margin-bottom: 10px;
+}
+
+.gpa-title{
+    text-align: left;
+    margin-left: 24%;
+    display:block;
+    color: white;
+    font-size: 130%;
+    font-style: bold;
+    padding: 1%;
+}
+
+.gpa-input{
+    margin-left: 25%;
+    display:block;
+    font-style: bold;
+    width:50%;
+    background-color: white;
+    border: 2px solid #9e1c1c;
+    padding: 1%;
+    margin-bottom: 10px;
+}
+
+.graduation-title{
+    text-align: left;
+    margin-left: 24%;
+    display:block;
+    color: white;
+    font-size: 130%;
+    font-style: bold;
+    padding: 1%;
+}
+
+.graduation-input{
+    margin-left: 25%;
+    display:block;
+    font-style: bold;
+    width:50%;
+    background-color: white;
+    border: 2px solid #9e1c1c;
+    padding: 1%;
+}
+
+.previous-title{
+    text-align: center;
+    display:block;
+    color: white;
+    font-size: 130%;
+    font-style: bold;
+    padding: 1%;
+}
+label{
+    color: white;
+}
+.check{
+}
+.input-wrap{
+    padding-bottom: 2%;
+}
+
+footer{
+    font-style: bold;
+    color: white;
+    display: inline-block;
+    padding-top: 10%;
+}

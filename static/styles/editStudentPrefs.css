@@ -1,0 +1,126 @@
+body {
+	display: block;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	text-align: center;
+	background-color: #676a70;
+}
+
+header {
+	width: 100%;
+	position: fixed;
+	background-image: url("../media/NightCampus.jpg");
+	background-size: cover;
+	top: 0;
+}
+
+.jumbotron {
+	text-align: center;
+    color: #9e1c1c;
+    font-size: 130%;
+	background-image: url("../media/NightCampus.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	height: 30%;
+}
+
+.masthead {
+    display: block;
+    text-align:center;
+    color: #9e1c1c;
+    font-size: 130%;
+}
+
+.cover-heading {
+    display: block;
+    text-align:center;
+    font-style: italic;
+    font-size: 200%;
+    padding-bottom: 1%;
+    color: white;
+}
+
+.mainbody-info {
+	margin-top: 165px;
+	background-color: #676a70;
+}
+
+.studentName {
+	display: block;
+	text-align: left;
+	font-size: 225%;
+	font-weight: bold;
+	background-color: #9e1c1c;
+	padding-left: 40px;
+	padding-bottom: 2%;
+	padding-top: 2%;
+}
+
+.input-wrap {
+	display: block;
+	text-align: center;
+	background-color: #676a70;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.previousTA-title{
+	display: block;
+	text-align: center;
+	background-color: #676a70;
+}
+
+.newCourseInfo {
+	background-color: #676a70;
+}
+
+.add-course {
+	padding: 2px 20px;
+	color: white;
+	text-align: center;
+	background-color: #9e1c1c;
+	font-size: 100%;
+	font-family: Impact, Charcoal, sans-serif;
+	text-decoration:none;
+	border: 2px solid #aaa;
+}
+
+.add-course:hover {
+	background-color: white;
+    color: #9e1c1c;
+    border: 2px solid #9e1c1c;
+}
+
+a.cancel {
+	padding: 4px 35px;
+	color: white;
+	text-align: center;
+	background-color: #9e1c1c;
+	font-size: 100%;
+	font-family: Impact, Charcoal, sans-serif;
+	text-decoration:none;
+	border: 2px solid #aaa;
+	padding-bottom: 5px;
+}
+
+a.cancel:hover {
+	background-color: white;
+    color: #9e1c1c;
+    border: 2px solid #9e1c1c;
+}
+
+
+textarea{
+	border: 2px solid #9e1c1c;
+}
+
+footer {
+	display: inline-block;
+    padding-top: 2%;
+    background-color: #9e1c1c;
+    padding-bottom: 0.5%;
+}

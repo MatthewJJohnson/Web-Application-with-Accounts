@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles/instructor_new.css">
+        <script src="scripts/jquery.min.js"></script>
+        <script type="text/javascript" src= "scripts/newaccount.js"></script>
+        <script type="text/javascript">
+        </script>
+</head>
+
+<body>
+          <div class="masthead">
+              <h2 class="masthead-brand">EECS TA ASSIGN</h2>
+          </div>
+
+          <div class="inner-cover">
+            <h1 class="cover-heading">Instructor Sign Up</h1>
+            <h2 class="lead1">Creating an instructor account will allow you to list the courses for which you are in need of TAs. Once your courses are listed, TAs may apply to be a TA for one or more of the courses you will be instructing. Once TAs have applied you may choose which TA(s) will be assigned to your courses. As more TAs apply, you can change who the selected TA(s) for your courses are.</h2>
+          </div>
+
+          <form method="get" action="home.html">
+          <div class = "input-wrap">
+          <div class="firstname-title">First Name:</div>
+          <input class= "firstname-input" rows="1" name="firstname" placeholder="John"></input>
+          <div class="lastname-title">Last Name:</div>
+          <input class= "lastname-input" rows="1" name="lastname" placeholder="Smith"></input>
+          <div class="wsuid-title">8-Digit WSU ID:</div>
+          <input class= "wsuid-input" rows="1" maxlength="8" name="ID"  placeholder="12345678"></input>
+        <div class="phone-title">Phone Number:</div>
+          <input class= "phone-input" rows="1" maxlength="10" name="phone" placeholder="5091112345"></input>
+          <div class="username-disclaim">Please enter a valid WSU email. This will be your username for EECS TA Assign.</div>
+          <div class="username-title">Username:</div>
+          <input class= "username-input" rows="1" name="username" placeholder="example@wsu.edu"></input>
+        <div class="password-disclaim">Please choose an account password. Your password must be at least 8 characters, with at least 1 uppercase letter and 1 number. Special characters are not allowed.</div>
+         <div class="password-title">Password:</div>
+         <input type="password" class= "password-input" rows="1" maxlength="15" name="password"></input>
+<!--
+         <div class="course-disclaim">Please enter a course you are teaching and the number of labs  and TAs it will have. Use course catalog names and seperate the lab count and TA count with a comma. For example, a 3 credit Computer Science course with no labs and needing 2 TAs is input below.</div>
+         <div class="course-title">Course:</div>
+          <input class= "course-input" rows="1" maxlength="14" name="Course1" placeholder="CptS 399,0,2"></input>
+         <div class="course-title">Course:</div>
+          <input class= "course-input" rows="1" maxlength="14" name="Course2"></input>
+         <div class="course-title">Course:</div>
+          <input class= "course-input" rows="1" maxlength="14" name="course3"></input>
+-->
+         <div class= "input-wrap">
+         <a class="cancel" href="home.html">Cancel</a>
+         <input class="sign-up-instructor" type ="button" onclick="insertInstructorAccount()" value="Sign-Up"/>
+
+         </div>
+          </form>
+</body>
+
+<footer>
+        <div class="mastfoot">
+          <p>An application designed for <a href="https://vcea.wsu.edu/undergraduatestudies/">Washington State University</a>.</p>
+          </div>
+</footer>
+</html>

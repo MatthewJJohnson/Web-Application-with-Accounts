@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="styles/student_new.css">
+  <script src="scripts/jquery.min.js"></script>
+  <script type="text/javascript" src="scripts/newaccount.js"></script>
+</head>
+
+<body>
+  <div class="masthead">
+    <h2 class="masthead-brand">EECS TA ASSIGN</h2>
+  </div>
+
+  <div class="inner-cover">
+    <h1 class="cover-heading">TA Sign Up</h1>
+    <h2 class="lead1">Creating a TA account will allow you to choose courses that you wish to TA for. Once you have chosen a course, an instructor may choose to make you the TA for the course.</h2>
+  </div>
+
+  <form id="signform" method="get" action="home.html">
+    <div class="input-wrap">
+      <div class="firstname-title">First Name:</div>
+      <input class="firstname-input" rows="1" name="firstname" placeholder="John"></input>
+      <div class="lastname-title">Last Name:</div>
+      <input class="lastname-input" rows="1" name="lastname" placeholder="Smith"></input>
+      <div class="wsuid-title">8-Digit WSU ID:</div>
+      <input class="wsuid-input" rows="1" maxlength="8" name="ID" placeholder="12345678"></input>
+      <div class="phone-title">Phone Number:</div>
+      <input class="phone-input" rows="1" maxlength="10" name="phone" placeholder="5091112345"></input>
+      <div class="username-disclaim">Please enter a valid WSU email. This will be your username for EECS TA Assign.</div>
+      <div class="username-title">Username:</div>
+      <input class="username-input" rows="1" name="username" placeholder="example@wsu.edu"></input>
+      <div class="password-disclaim">Please choose an account password. Your password must be at least 8 characters, with at least 1 uppercase letter and 1 number. Special characters are not allowed.</div>
+      <div class="password-title">Password:</div>
+      <input type="password" class="password-input" rows="1" maxlength="15" name="password"></input>
+      <div class="major-title">Intented Major:</div>
+      <input class="major-input" rows="1" name="major" placeholder="Basket Weaving"></input>
+      <div class="gpa-title">Cumulative GPA (4.0 scale):</div>
+      <input class="gpa-input" rows="1" maxlength="4" name="gpa" placeholder="4.00"></input>
+      <div class="graduation-title">Expected Graduation Date:</div>
+      <input class="graduation-input" rows="1" name="graduation" placeholder="Spring 2069"></input>
+    </div>
+    <radiofield>
+      <div class="previous-title">Have you been a TA before?</div>
+      <input class="check" type="radio" value="yes" name="ta" id="checkbox1" /><label for="checkbox1">Yes</label>
+      <input class="check" type="radio" name="ta" value="no" id="checkbox2" /><label for="checkbox2">No</label>
+    </radiofield>
+    <div class="input-wrap">
+      <a class="cancel" href="home.html">Cancel</a>
+      <input class="sign-up-student" onclick="insertStudentAccount()" type="button" value="Sign-Up" />
+    </div>
+  </form>
+</body>
+
+<footer>
+  <div class="mastfoot">
+    <p>An application designed for <a href="https://vcea.wsu.edu/undergraduatestudies/">Washington State University</a>.</p>
+  </div>
+</footer>
+
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles/student_homepage.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src= "scripts/loadedstudents.js"></script>
+        <script type="text/javascript"></script>
+        <!-- Bootstrap Library -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <!--$(window).on("load", loadStudent); -->
+        <!--window.onload = function() {
+          loadStudent();
+        };-->
+</head>
+<!-- onload="loadStudent();"-->
+<body>
+        <div class="massiveWrap">
+				<header>
+					<div class="masthead">
+						<div class="jumbotron-fluid">
+							<h2 class="masthead-brand">EECS TA ASSIGN</h2>
+							<h1 class="cover-heading">Student Homepage</h1>
+						</div>
+					</div>
+
+				</header>
+
+				<section class="mainbody-info">
+          <div class="inner-cover">
+
+            <div class="studentContactInfo">
+              <div class="Name">
+                <input id="studentName" class="studentName" value="" rows="1" readonly>
+                <input id="logout" class="logout" type="button" onclick="Logout()" value="Logout" />
+                </input>
+              </div>
+
+	            <h3 class="ContactInfo">Contact Information
+              <input class="superEdit" type="button" onclick="superEdit()" value="Edit" />
+              <input id="Saved" class="superSave" type="button" onclick="superSave()" value="Save" />
+            </h3>
+	            	<div class="contactInfoSections">
+
+			           	<div class="contactID">WSU ID#:
+			           		<input id="idNumber" class="idNumber" value="" readonly rows="1"> </input>
+			           	</div>
+			           	<div class="contactEmail">TA Assign Username:
+			           		<input id="emailAddress" class="emailAddress" value="" readonly rows="1"></input>
+			           	</div>
+			           	<div class="contactPhoneNumber">Phone Number:
+			           	</div>
+			           	<input id="idPhone" class="phoneNumber" rows="1" maxlength="10" value="" readonly></input>
+			           <!--	<input class="edit" type="button" onclick="editPhone()" value="Edit" />
+			           	<input id="savePhone" class="submitPhoneNumber" type="button" onclick="savePhone()" value="Save" />
+                -->
+			          </div>
+		        </div>
+
+       			<div class="studentAcademicInfo">
+       				<h4 class="AcademicInfo">Academic Information</h4>
+	            	<div class="academicInfoSections">
+
+			           	<div class="academicMajor">Major:
+			           	</div>
+				          <input id="idMajor" class="major" rows="1" maxlength="30" readonly value=""></input>
+			          <!-- 	<input class="edit" type="button" onclick= "editMajor()" value="Edit" />
+				          <input id="saveMajor" class="submitMajor" type="button" onclick="saveMajor()" value="Save" />
+               -->
+			           	<div class="academicGPA">GPA:
+			           	</div>
+				          <input id= "idGPA" class="GPA" rows="1" maxlength="5" readonly value=""> </input>
+			         <!--  	<input class="edit" type="button" onclick="editGPA()" value="Edit" />
+				          <input id="saveGPA" class="submitGPA" type="button" onclick="saveGPA()"value="Save" />
+                -->
+			           	<div class="academicGradDate">Expected Graduation Date:
+			           	</div>
+				          <input id="idGrad" class="expectedGradDate" rows="1" maxlength="30" readonly value=""></input>
+			         <!--  	<input class="edit" onclick="editGrad()" type="button" value="Edit" />
+				          <input id="saveGrad" class="submitGradDate" onclick="saveGrad()" type="button" value="Save" />
+                -->
+			           	<div class="taBefore">Have you been a TA before?</div>
+			            <input id="idTA" class="whitebox" rows="1" maxlength="3" readonly value=""></input>
+              <!--    <input class="edit" onclick="editTA()" type="button" value="Edit" /> -->
+                    <radiofield id="taRadio" class="taRadioClass">
+                    <input class ="check" type="radio"value="yes" name="ta" id="checkbox1"/><label for="checkbox1">Yes</label>
+                    <input class="check" type="radio" name="ta" value="no" id="checkbox2"/><label for="checkbox2">No</label>
+              <!--      <input id="saveTA" class="submitTA" onclick="saveTA()" type="button" value="Save" /> -->
+                  </radiofield>
+			          </div>
+		        </div>
+
+		        <div class="studentCoursePrefs">
+	            <h5 class="CoursePrefs">Course Preferences</h5>
+	            	<div class="prefSections">
+
+                  <div class="newDisclaim">Apply to a new Course:
+                    <button type="button" class="apply" data-toggle="collapse" data-target="#application">New Application</button>
+                </div>
+
+                  <div id="application" class= "collapse" class = "new-wrap">
+                    <div class= "newapplyinputs">
+        		        <div class="newcourse-title">Course Name:</div>
+        		        <input id="appcoursename" class= "newcoursename-input" rows="1"  maxlength="5" name="courseTitle" placeholder="CE453"></input>
+
+        		        <div class="grade-title">Grade recieved for this course:</div>
+        		        <input id="appcoursegrade" class= "grade-input" rows="1" maxlength="2" name="gradeInCourse" placeholder="B+"></input>
+
+        		      	<div class="semesterTook-title">Semester you took this course:</div>
+        		        <input id="appcoursetook" class= "semesterTook-input" rows="1" name="semesterTook" placeholder="Fall 2015"></input>
+
+        		        <div class="semesterApplying-title">Semester you are applying for:</div>
+        		        <input id="appcourseterm" class= "semesterApplying-input" rows="1" name="semesterApplying" placeholder="Spring 2018"></input>
+        	       	</div>
+
+        	       	<radiofield>
+        	       		<div class="newpreviousTA-title">Have you been a TA for this course before?</div>
+        		       	<input class ="check" type="radio"value="yes" name="ta" id="appcheckbox1"/><label for="checkbox1">Yes</label>
+        		       	<input class="check" type="radio" name="ta" value="no" id="appcheckbox2"/><label for="checkbox2">No</label>
+        	       	</radiofield>
+        	       	<div class= "submit-wrap">
+        	       		<input type="button" class="mycancel" data-toggle="collapse" onclick="cancelApplication()"data-target="#application" value="Cancel"></input>
+        	       		<input class="add-course" type="submit" onclick="newApplication()" value="Add-Course"/>
+        	       	</div>
+                </div>
+
+                  <div class="yourDisclaim">Your applied Courses:</div>
+			            <div class="prefCourseNumber">
+			            		<button type="button" onclick="GetApplication2()" class="courseNumberInfo" data-toggle="collapse" data-target="#expandCourseInfo">Show</button>
+			            </div>
+
+			            <div class="specificCourseInfo">
+				            <div id="expandCourseInfo" class="collapse">
+                      <div id="nada">Unfortunately, we have nothing to show for you. Go Apply!</div>
+                      <div id="Number1"> Course:
+  			            		<input id="coursenumber1" class="courseInput"readonly/>
+  			            	</div>
+
+                      <div id="Number2"> Course:
+  			            		<input id="coursenumber2" class="courseInput"readonly/>
+  			            	</div>
+
+                      <div id="Number3"> Course:
+  			            		<input id="coursenumber3" class="courseInput" readonly/>
+  			            	</div>
+
+                      <div id="Number4"> Course:
+  			            		<input id="coursenumber4" class="courseInput" readonly/>
+  			            	</div>
+
+                      <div id="Number5"> Course:
+  			            		<input id="coursenumber5" class="courseInput" readonly/>
+  			            	</div>
+
+					          </div>
+					        </div>
+
+			        </div>
+						</div>
+
+					</div>
+				</section>
+
+          <form method="get" action="??.html">
+
+          	<div class = "input-wrap">
+						</div>
+
+        	</form>
+
+        	<!-- Boot Strap Libraries -->
+        	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+					<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+        </div>
+</body>
+
+<footer align="center">
+        <div class="mastfoot">
+          <p>An application designed for <a href="https://vcea.wsu.edu/undergraduatestudies/">Washington State University</a>.</p>
+				</div>
+</footer>
+
+</html>

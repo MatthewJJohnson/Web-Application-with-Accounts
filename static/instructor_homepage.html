@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles/instructor_homepage.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src= "scripts/loadedinstructors.js"></script>
+        <script type="text/javascript"></script>
+        <!-- Bootstrap Library -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+</head>
+
+<body>
+        <div class="massiveWrap">
+				<header>
+					<div class="masthead">
+						<div class="jumbotron-fluid">
+							<h2 class="masthead-brand">EECS TA ASSIGN</h2>
+							<h1 class="cover-heading">Instructor Homepage</h1>
+						</div>
+					</div>
+
+				</header>
+
+				<section class="mainbody-info">
+          <div class="inner-cover">
+
+            <div class="instructorContactInfo">
+              <div class="Name">
+                <input id="instructorName" class="instructorName" value="" rows="1" readonly>
+                <input id="logout" class="logout" type="button" onclick="Logout()" value="Logout" />
+                </input>
+              </div>
+
+	            <h3 class="ContactInfo">Contact Info</h3>
+	            	<div class="contactInfoSections">
+
+			           	<div class="contactID">WSU ID#:
+			           		<input id="idNumber" class="idNumber" value="" readonly rows="1"> </input>
+			           	</div>
+			           	<div class="contactEmail">TA Assign Username:
+			           		<input id="emailAddress" class="emailAddress" value="" readonly rows="1"></input>
+			           	</div>
+			           	<div class="contactPhoneNumber">Phone Number:
+			           	</div>
+			           	<input id="idPhone" class="phoneNumber" rows="1" maxlength="10" value="" readonly></input>
+			           	<input class="edit" type="button" onclick="editPhone()" value="Edit" />
+			           	<input id="savePhone" class="submitPhoneNumber" type="button" onclick="savePhone()" value="Save" />
+
+			          </div>
+		        </div>
+
+		        <div class="instructorCourses">
+	            <h5 class="CoursePrefs">Courses You Teach
+              </h5>
+	            	<div class="prefSections">
+
+			            <div class="titleCourseNumber">Course Number:
+			            	<input id="CourseOne" class="courseNumber" readonly>
+			            		<button id="show1" onclick="ShowCourseOne()" type="button" class="courseNumberInfo" data-toggle="collapse" data-target="#expandCourseInfo">Show</button>
+                      <input class="superEdit" type="button" onclick="EditOne()" value="Edit" />
+                      <input id="SaveOne" class="superSave" type="button" onclick="SaveOne()" value="Save" />
+                    </input>
+			            </div>
+
+			            <div class="specificCourseInfo">
+				            <div id="expandCourseInfo" class="collapse">
+					           	<div class="labsoffered">Number of Labs in the Course:
+					            	<input id="labsOne" class="labsinput" readonly></input>
+					           	</div>
+
+					           	<div class="lecturesoffered">Number of Lectures in the Course:
+					            	<input id="lecturesOne" class="lecturesinput" readonly></input>
+					           	</div>
+
+
+                      <div class="semesteroffered">Semester You Will Offer the Course:
+                        <input id="offeredOne" class="offeredinput" readonly></input>
+                      </div>
+
+                      <div class="talist">
+                        <label>TA Applicants (choose one)
+                        <input class="superEdit" type="button" onclick="SaveTAOne()"value="Save TA Selection"/>
+                        </label>
+                        <div id="talist1">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+              <div class="titleCourseNumber">Course Number:
+                <input id="CourseTwo" class="courseNumber" readonly>
+                <button id="show2" onclick="ShowCourseTwo()" type="button" class="courseNumberInfo" data-toggle="collapse" data-target="#expandCourseInfo2">Show</button>
+                <input class="superEdit" type="button" onclick="EditTwo()" value="Edit" />
+                <input id="SaveTwo" class="superSave" type="button" onclick="SaveTwo()" value="Save" />
+                </input>
+              </div>
+
+              <div class="specificCourseInfo">
+                <div id="expandCourseInfo2" class="collapse">
+                  <div class="labsoffered">Number of Labs in the Course:
+                    <input id="labsTwo" class="labsinput" readonly></input>
+                  </div>
+
+                  <div class="lecturesoffered">Number of Lectures in the Course:
+                    <input id="lecturesTwo" class="lecturesinput" readonly></input>
+                  </div>
+
+                  <div class="semesteroffered">Semester You Will Offer the Course:
+                    <input id="offeredTwo" class="offeredinput" readonly></input>
+                  </div>
+
+                  <div class="talist">
+                    <label>TA Applicants (choose one)
+                      <input class="superEdit" type="button" onclick="SaveTATwo()" value="Save TA Selection"/>
+                    </label>
+                    <div id="talist2">
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+          <div class="titleCourseNumber">Course Number:
+            <input id="CourseThree" class="courseNumber" readonly>
+            <button id="show3" onclick="ShowCourseThree()" type="button" class="courseNumberInfo" data-toggle="collapse" data-target="#expandCourseInfo3">Show</button>
+            <input class="superEdit" type="button" onclick="EditThree()" value="Edit" />
+            <input id="SaveThree" class="superSave" type="button" onclick="SaveThree()" value="Save" />
+            </input>
+          </div>
+
+          <div class="specificCourseInfo">
+            <div id="expandCourseInfo3" class="collapse">
+              <div class="labsoffered">Number of Labs in the Course:
+                <input id="labsThree"class="labsinput" readonly></input>
+              </div>
+
+              <div class="lecturesoffered">Number of Lectures in the Course:
+                <input id="lecturesThree" class="lecturesinput" readonly></input>
+              </div>
+
+              <div class="semesteroffered">Semester You Will Offer the Course:
+                <input id="offeredThree" class="offeredinput" readonly></input>
+              </div>
+
+              <div class="talist">
+                <label>TA Applicants (choose one)
+                  <input class="superEdit" type="button" onclick="SaveTAThree()" value="Save TA Selection"/>
+                </label>
+                <div id="talist3">
+                </div>
+              </div>
+          </div>
+
+      </div>
+						</div>
+
+					</div>
+				</section>
+
+          <form method="get" action="??.html">
+
+          	<div class = "input-wrap">
+						</div>
+
+        	</form>
+
+        	<!-- Boot Strap Libraries -->
+        	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+					<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+        </div>
+</body>
+
+<footer align="center">
+        <div class="mastfoot">
+          <p>An application designed for <a href="https://vcea.wsu.edu/undergraduatestudies/">Washington State University</a>.</p>
+				</div>
+</footer>
+
+</html>

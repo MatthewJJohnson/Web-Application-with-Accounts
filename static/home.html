@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles/home.css">
+        <script src="scripts/jquery.min.js"></script>
+        <script type="text/javascript" src= "scripts/newaccount.js"></script>
+        <script type="text/javascript"></script>
+</head>
+
+<body>
+          <div class="masthead">
+              <h2 class="masthead-brand">EECS TA ASSIGN</h2>
+          </div>
+
+          <div class="inner-cover">
+            <h1 class="cover-heading">Find your Class. Find your TA.</h1>
+            <h2 class="lead1-home">EECS TA Assign is an application that matches Teaching Assistants to Courses and Professors to Teaching Assistants.</h2>
+            <p class="lead2">Are you a student interested in becoming a TA for a specific course? Navigate to the TA Sign-Up page.</p>
+            <p class="lead2">Are you an instructor interested in selecting your TA's or need to add a course for TA's to fill? Navigate to the Instructor Sign-Up page.</p>
+            <p class="lead3">
+              <a href="student_new.html" class="btn-sign-up">New TA Sign-Up</a>
+              <a href="instructor_new.html" class="btn-sign-up">New Instructor Sign-Up</a></p>
+            <p class= "lead4">Already have an account? Sign-in below.</p>
+          </div>
+
+          <div class= "who">Student Sign-In:</div>
+          <form method="get" action="student_homepage.html">
+          <div class = "input-wrap-home">
+          <div class="username-title">Student Username:</div>
+          <input class= "student-username-input" rows="1" name="username" placeholder='example@wsu.edu'></input>
+         <div class="password-title">Student Password:</div>
+         <input type="password" class= "student-password-input" rows="1" maxlength = "15" name="password"></input>
+         </div>
+         <input class="sign-in" type ="button" onclick="studlogin()" value="Sign-In"/>
+          </form>
+
+         <div class= "who">Instructor Sign-In:</div>
+          <form method="get" action="instructor_homepage.html">
+          <div class = "input-wrap-home">
+          <div class="username-title">Instructor Username:</div>
+          <input class= "username-input" rows="1" name="username" placeholder='example@wsu.edu'></input>
+         <div class="password-title">Instructor Password:</div>
+         <input type="password" class= "password-input" rows="1" maxlength = "15" name="password"></input>
+         </div>
+         <input class="sign-in" type ="button" onclick="instructlogin()" value="Sign-In"/>
+          </form>
+
+</body>
+
+<footer>
+        <div class="mastfoot">
+          <p>An application designed for <a href="https://vcea.wsu.edu/undergraduatestudies/">Washington State University</a>.</p>
+          </div>
+</footer>
+</html>

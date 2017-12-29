@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles/editStudentPrefs.css">
+
+        <!-- Bootstrap Library -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+</head>
+
+<body>
+
+				<header>
+					<div class="masthead">
+						<div class="jumbotron">
+							<h2 class="masthead-brand">EECS TA ASSIGN</h2>
+							<h1 class="cover-heading">New Application</h1>
+						</div>
+					</div>
+
+				</header>
+
+				<section class="mainbody-info">
+          <div class="inner-cover">
+
+          	<div class="Name">
+            	<h2 class="studentName">John Smith</h2>
+            </div>
+
+          </div>
+
+        </section>
+
+        <form method="get" action="student_homepage.html">
+        	<div class="newCourseInfo">
+	        <div class = "new-wrap">
+		        <div class="newcourse-title">Course Name:</div>
+		        <input class= "newcoursename-input" rows="1" name="courseTitle" placeholder="CptS 121"></input>
+
+		        <div class="grade-title">Grade you recieved in this course:</div>
+		        <input class= "grade-input" rows="1" maxlength="3" name="gradeInCourse" placeholder="B+"></input>
+
+		      	<div class="semesterTook-title">Semester you took this course:</div>
+		        <input class= "semesterTook-input" rows="1" name="semesterTook" placeholder="Fall 2015"></input>
+
+		        <div class="semesterApplying-title">Semester you are applying for:</div>
+		        <input class= "semesterApplying-input" rows="1" name="semesterApplying" placeholder="Spring 2018"></input>
+	       	</div>
+
+	       	<radiofield>
+	       		<div class="newpreviousTA-title">Have you been a TA for this course before?</div>
+		       	<input class ="check" type="radio"value="yes" name="ta" id="checkbox1"/><label for="checkbox1">Yes</label>
+		       	<input class="check" type="radio" name="ta" value="no" id="checkbox2"/><label for="checkbox2">No</label>
+	       	</radiofield>
+	       	<div class= "submit-wrap">
+	       		<a class="cancel" href="student_homepage.html">Cancel</a>
+	       		<input class="add-course" type="submit" href="student_homepage.html" value="Add-Course"/>
+	       	</div>
+
+	       	</div>
+        </form>
+
+        <!-- Boot Strap Libraries -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body>
+
+<footer align="center">
+        <div class="mastfoot">
+          <p>An application designed for <a href="https://vcea.wsu.edu/undergraduatestudies/">Washington State University</a>.</p>
+				</div>
+</footer>
+
+</html>
